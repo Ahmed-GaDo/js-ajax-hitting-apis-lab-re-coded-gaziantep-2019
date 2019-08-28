@@ -41,9 +41,9 @@ function getRepositories() {
     document.getElementById('details').innerHTML = branchList;
   }
   
-   function getBranches(){
+   function getBranches(el){
     const name = el.dataset.repository; /// NEED HELP HERE
     const req = new XMLHttpRequest();
     req.addEventListener('load', displayBranches);
     req.open('GET', 'https://api.github.com/repos/octocat/' + name + '/branches');
-    req.send();
+    req.send();}
