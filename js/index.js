@@ -41,7 +41,7 @@ function getRepositories() {
     document.getElementById('details').innerHTML = branchList;
   }
   
-   function getBranches(el){
+   function getBranches(){
     const name = el.dataset.repository; /// NEED HELP HERE
     const req = new XMLHttpRequest();
     req.addEventListener('load', displayBranches);
